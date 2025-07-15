@@ -1,11 +1,11 @@
-# BoilerExam-Practical
+# BoilerExam-Practical 
 a) Make a selection based on ease of setup (single docker container ideally), simplicity (we don’t need some crazy geo-distributed service), and license (one that lets us reuse without requiring us to publish the rest of the Boilerexams source code).
 
 b) Write up an argument for why you chose the service you did, along with any challenges you forsee for making the switch from AWS. Put this in the README of the repo you’ll submit.
 
 ## Proposal for local S3 API choice
 
-### First Choice: MiniO
+### First Choice: MiniO 
 - Lightweight local S3 mimic. 
 - Kubernetes support.
 - Fully compatible with S3 API.
@@ -34,3 +34,8 @@ I believe that MiniO is the superior choice considering the planned extent of ch
 - Back up data with external Drive pref, then clean wipe AWS to prevent future costs.
 - Monitor AWS S3 for possible errors in reference causing uploads to AWS.
 - Set up new CI/CD for local S3 upload/pull code.
+
+## License
+MiniO uses Apache License 2.0
+- Free to use, modify, distribute.
+- Free use in closed-source.
