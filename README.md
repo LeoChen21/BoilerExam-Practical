@@ -29,8 +29,8 @@ I believe that MiniO is the superior choice considering the planned extent of ch
 ### Possible Issues in migration ⚠️
 - !!! Will be outperformed by AWS for Purdue Global students due to geographical limitations of local server.
 - Unclear how current S3 upload works. If using presigned URLs, may be difficult.
-- Will have to manually manage data security & local access to AWS DDOS mitigation.
-- Worse if planning to use more AWS services in the future.
+- Will have to manually manage data security & lose access to AWS DDOS mitigation.
+- Lose integration tools if planning to use more AWS services in the future.
 - Requires manual setup for monitoring.
 
 ### Migration Steps 👣
