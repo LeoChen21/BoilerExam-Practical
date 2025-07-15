@@ -3,12 +3,13 @@ a) Make a selection based on ease of setup (single docker container ideally), si
 
 b) Write up an argument for why you chose the service you did, along with any challenges you forsee for making the switch from AWS. Put this in the README of the repo you’ll submit.
 
-## Goal: Migrate from AWS S3 to local S3
+## Goal: Migrate from AWS S3 to local S3 🥅
 
 - Reduce costs.
 - Either improve or maintain latency for Purdue Students.
+- Improve control.
 
-## Proposal for local S3 API choice
+## Proposal for local S3 API choice 📜
 
 ### First Choice: MiniO ✅ 
 - Lightweight local S3 mimic. 
