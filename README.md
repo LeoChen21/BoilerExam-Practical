@@ -50,3 +50,14 @@ I believe that MiniO is the superior choice considering the planned extent of ch
 MiniO uses Apache License 2.0
 - Free to use, modify, distribute.
 - Free use in closed-source.
+
+# Practical
+
+## Instructions
+Make a docker-compose stack consisting of:
+A dead-simple React frontend with an upload button for PDFs
+A Postgres + your S3 service of choice backend that accepts those PDFs
+A button on the frontend that lets you view the object you just uploaded (querying the s3 service for it).
+ 
+
+We should be able to look at your work by cloning your github repo and running a single `docker compose up –-build` to run the web app locally.
