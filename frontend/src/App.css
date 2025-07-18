@@ -1,0 +1,67 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  min-height: 100vh;
+}
+
+.upload-section {
+  margin: 20px 0;
+}
+
+.upload-section input {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.upload-section button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.upload-section button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.files-section {
+  margin-top: 40px;
+}
+
+.files-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.files-section li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #444;
+  border-radius: 5px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.files-section button {
+  padding: 5px 10px;
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
