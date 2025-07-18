@@ -63,7 +63,7 @@ A button on the frontend that lets you view the object you just uploaded (queryi
 We should be able to look at your work by cloning your github repo and running a single `docker compose up –-build` to run the web app locally.
 
 ## Architecture
-3 Docker containers
+4 Docker containers
 - Frontend (react frontend with upload button for pdfs)
 - Backend (upload endpoint and fetch for pdfs)
 - Postgres (database containing metadata for objects stored in MiniO)

@@ -23,15 +23,27 @@ function App() {
       return;
     }
 
+    const maxFileSize = 50 * 1024 * 1024; // 50MB
+    if (selectedFile.size > maxFileSize) {
+      alert('File size too large. Maximum size is 50MB.');
+      return;
+    }
+
     setLoading(true);
     const formData = new FormData();
     formData.append('pdf', selectedFile);
+
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 10000); // 60 second timeout
 
     try {
       const response = await fetch(`${API_URL}/upload`, {
         method: 'POST',
         body: formData,
+        signal: controller.signal
       });
+
+      clearTimeout(timeoutId);
 
       if (response.ok) {
         const result = await response.json();
@@ -43,8 +55,16 @@ function App() {
         alert('Upload failed');
       }
     } catch (error) {
+      clearTimeout(timeoutId);
       console.error('Upload error:', error);
-      alert('Upload failed');
+      
+      if (error.name === 'AbortError') {
+        alert('Upload timed out. Please try again with a smaller file.');
+      } else if (error.message.includes('network') || error.message.includes('fetch')) {
+        alert('Network error. Please check your connection and try again.');
+      } else {
+        alert('Upload failed');
+      }
     } finally {
       setLoading(false);
     }
