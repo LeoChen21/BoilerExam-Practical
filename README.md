@@ -53,7 +53,7 @@ MiniO uses Apache License 2.0
 
 # Practical
 
-## Instructions
+## Instructions 📝
 Make a docker-compose stack consisting of:
 A dead-simple React frontend with an upload button for PDFs
 A Postgres + your S3 service of choice backend that accepts those PDFs
@@ -62,9 +62,20 @@ A button on the frontend that lets you view the object you just uploaded (queryi
 
 We should be able to look at your work by cloning your github repo and running a single `docker compose up –-build` to run the web app locally.
 
-## Architecture
+## Architecture 🏠
 4 Docker containers
 - Frontend (react frontend with upload button for pdfs)
 - Backend (upload endpoint and fetch for pdfs)
 - Postgres (database containing metadata for objects stored in MiniO)
 - MiniO (local S3 stack containing uploaded pdfs)
+
+## Manual 📖
+- git clone https://github.com/LeoChen21/BoilerExam-Practical
+- run docker compose up --build
+- go to localhost:3000
+- upload image, then click upload pdf, then click on uploaded files to view
+
+## AI Usage
+- Documentation
+- MiniO/Postgres setup
+- General Debugging
